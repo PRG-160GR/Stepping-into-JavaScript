@@ -1,9 +1,13 @@
-function getAverage(a,b,c,d,e,f) {
+function getAverage(a,b,c,d,e) {
 
-      var average = (a+b+c+d+e+f) / 6;
+      var average = (a+b+c+d+e) / 2;
       console.log(average);
-      return average;
+
 }
 
-var myResult = getAverage(7,8,9,10,11,12);
-console.log("the average is " + myResult);
+function alert(string){
+
+}
+
+getAverage (7,8,1,4,3)
+alert(getAverage)
