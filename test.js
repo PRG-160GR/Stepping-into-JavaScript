@@ -1,19 +1,18 @@
-var average = 0;
+function Prime(n) {
 
-function getAverage(a,b) {
+if (n >= 2) {
 
-      average = (a+b) / 2;
-      console.log(average);
-      return average;
+for (var i = 2; i < n; i++) {
+if(n % i === 0) {
 
+return false;
+}
 }
 
-var myResult = getAverage(7,11); //gobal variable
-
-function logResult(){
-
-    console.log("the average is " + myResult + " inside the function");
-
+return true;
 }
 
-logResult();
+return false;
+}
+
+console.log(Prime(7));
