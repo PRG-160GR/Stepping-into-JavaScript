@@ -1,13 +1,19 @@
-function getAverage(a,b,c,d,e) {
+var average = 0;
 
-      var average = (a+b+c+d+e) / 2;
+function getAverage(a,b) {
+
+      average = (a+b) / 2;
       console.log(average);
+      return average;
 
 }
 
-function alert(string){
+var myResult = getAverage(7,11); //gobal variable
+
+function logResult(){
+
+    console.log("the average is " + myResult + " inside the function");
 
 }
 
-getAverage (7,8,1,4,3)
-alert(getAverage)
+logResult();
